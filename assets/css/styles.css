@@ -286,6 +286,34 @@ a:hover {
   gap: 0.9rem;
 }
 
+.speakers-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: start;
+}
+
+.speakers-layout .speaker-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.speaker-image-card {
+  position: sticky;
+  top: 96px;
+  background: var(--surface);
+  border: 1px solid rgba(229, 222, 212, 0.9);
+  border-radius: var(--radius);
+  box-shadow: 0 12px 40px rgba(29, 39, 51, 0.07);
+  padding: clamp(0.8rem, 2vw, 1.2rem);
+}
+
+.speaker-image-card img {
+  width: 100%;
+  height: auto;
+  border-radius: calc(var(--radius) - 8px);
+  object-fit: contain;
+}
+
 .speaker-card,
 .content-card,
 .notice-card,
@@ -413,6 +441,16 @@ a:hover {
   justify-content: space-between;
   gap: 1.5rem;
   align-items: center;
+}
+
+@media (max-width: 960px) {
+  .speakers-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .speaker-image-card {
+    position: static;
+  }
 }
 
 @media (max-width: 860px) {
