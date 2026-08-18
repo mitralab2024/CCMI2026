@@ -8,6 +8,7 @@ https://sites.google.com/iu.edu/ccmi2026
 
 - `index.html` — Home page
 - `program/` — Program page
+- `public-lecture/` — Public lecture page
 - `registration/` — Registration page
 - `abstract-submission/` — Abstract submission page
 - `venue/` — Venue page
@@ -44,3 +45,14 @@ http://localhost:8080
 The Abstract Submission page on the source site appears to contain an embedded Google Form. The form's direct embed URL was not exposed in the public static page text, so the GitHub Pages version links to the original abstract-submission page. Replace that link with your Google Forms embed URL once you have it.
 
 The `sitemap.xml` uses placeholder `example.github.io/ccmi2026` URLs. Replace those with your final GitHub Pages URL after publishing.
+
+## Homepage invited-speakers image
+
+The homepage now expects this image file:
+
+```text
+assets/img/ccmi-2026-speakers.png
+```
+
+Replace the placeholder PNG with the final conference graphic, keeping the same filename. The homepage layout places the invited-speaker list on the left and the PNG on the right on desktop screens; on narrow/mobile screens the image stacks below the speaker list.
+

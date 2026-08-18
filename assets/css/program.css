@@ -98,3 +98,16 @@
     min-width: 980px;
   }
 }
+
+
+.program-event-link {
+  color: inherit;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+}
+
+.program-event-link:hover,
+.program-event-link:focus {
+  color: var(--accent-dark);
+}
